@@ -1,6 +1,6 @@
 .event-filter-option {
 	color: #fffc;
-	text-shadow: -0.05em 0.05em #335;
+	text-shadow: -0.05em 0.05em #000;
 	transition: 0.1s;
 	cursor: pointer;
 }
