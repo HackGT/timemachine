@@ -1,0 +1,110 @@
+.event-card-scroller {
+	position: relative;
+	gap: 1rem;
+	flex-direction: column;
+
+	-webkit-mask-image: linear-gradient(to bottom, transparent 0, black var(--top-mask-size, 0), black calc(100% - var(--bottom-mask-size, 0)), transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, black var(--top-mask-size, 0), black calc(100% - var(--bottom-mask-size, 0)), transparent 100%);
+  --top-mask-size: 0px;
+  --bottom-mask-size: 0px;
+
+	flex-grow: 1;
+	overflow: auto;
+	padding: var(--event-card-outline-width);
+}
+
+.scroll-down-icon, .scroll-up-icon {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+	width: 2rem;
+	height: 2rem;
+	transition: opacity 0.2s;
+}
+.scroll-down-icon {
+	bottom: 0;
+}
+.scroll-up-icon {
+	top: 0;
+}
+
+.event-card-scroller.fade-top {
+  --top-mask-size: 2rem !important;
+}
+
+.event-card-scroller.fade-bottom {
+  --bottom-mask-size: 2rem !important;
+}
+
+/* invis scrollbar */
+.event-card-scroller::-webkit-scrollbar {
+	background-color: transparent;
+	width: 0;
+}
+.event-card-scroller::-webkit-scrollbar-thumb {
+	background-color: transparent;
+}
+.event-card-scroller::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.event-card-wrapper {
+	transition: 0.1s;
+	border-radius: var(--rounded);
+	outline: 3px solid transparent;
+}
+.event-card-wrapper:focus {
+	outline: none;
+	transform: none;
+}
+
+.event-card {
+	display: flex;
+	position: relative;
+	border-radius: var(--rounded);
+	overflow: hidden;
+	box-shadow: var(--event-card-shadow);
+	transition: 0.1s;
+
+	width: 100%;
+
+	/* background-image applied dynamically */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	outline: var(--event-card-outline-width) solid transparent;
+}
+.event-card:hover {
+	outline: var(--event-card-outline-width) solid white;
+}
+.event-card-content {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 0;
+	padding-top: 0.8rem;
+	box-sizing: border-box;
+}
+
+.event-card-date-banner {
+	clip-path: polygon(calc(100% - 1rem) 0, 95% 50%, calc(100% - 1rem) 100%, 0% 100%, 0% 0%);
+	width: fit-content;
+	font-size: 0.9rem;
+	font-weight: 800;
+	padding: 0.1rem 1em;
+	margin-bottom: 0.2rem;
+	padding-right: 2rem;
+	box-sizing: border-box;
+}
+
+.hero-event-card {
+	position: relative;
+	border-radius: var(--rounded);
+	overflow: hidden;
+	box-shadow: var(--event-card-shadow);
+	transition: 0.1s;
+	outline: var(--event-card-outline-width) solid transparent;
+}
+.hero-event-card:hover {
+	outline: var(--event-card-outline-width) solid white;
+}

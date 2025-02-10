@@ -12,7 +12,10 @@
   "dependencies": {
     "@chakra-ui/react": "^3.7.0",
     "@emotion/react": "^11.14.0",
+    "@fontsource-variable/dm-sans": "^5.1.1",
+    "@fontsource-variable/roboto-mono": "^5.1.1",
     "@hex-labs/core": "^1.0.52",
+    "lucide-react": "^0.475.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router": "^7.1.5",

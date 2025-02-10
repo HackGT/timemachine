@@ -7,6 +7,9 @@ import { BrowserRouter } from 'react-router';
 import { ChakraProvider } from '@chakra-ui/react';
 import { defaultSystem } from "@chakra-ui/react"
 
+import "@fontsource-variable/dm-sans";
+import "@fontsource-variable/roboto-mono";
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ChakraProvider value={defaultSystem}>

@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'Horse Saguaro';
+	src: url('../assets/fonts/hackgt11/HorseSaguaro.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	--min-padding: min(1rem, 5%);
+	--homepage-gap: 10%;
+	--main-margin-top: min(4rem, 6%);
+
+	--rounded: 0.5rem;
+
+	--fg-1: #fafafa;
+
+	--event-card-outline-width: 3px;
+	--event-card-shadow: 0 0 3px #0008;
+
+	color: var(--fg-1);
+	font-family: DM Sans Variable, Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
