@@ -9,9 +9,18 @@ interface EventFilterProps {
 
 const EventFilter = ({ eventTypes, selected, setSelected }: EventFilterProps) => {
 	return (
-		<Flex gap={4} mb={2} mr='var(--event-card-outline-width)' justifyContent='flex-end'>
-			{eventTypes.map((eventType) => 
-				<Box onClick={() => setSelected(eventType)} className={`event-filter-option ${selected === eventType ? 'selected' : ''}`}>
+		<Flex 
+		flexWrap='wrap' 
+		columnGap={4} 
+		rowGap={1}
+		mb={3} 
+		mr='var(--event-card-outline-width)' 
+		justifyContent={{base: 'center', xl: 'flex-end'}}>
+			{eventTypes.map((eventType, i) => 
+				<Box 
+				key={i}
+				onClick={() => setSelected(eventType)} 
+				className={`event-filter-option ${selected === eventType ? 'selected' : ''}`}>
 					{eventType}
 				</Box>
 			)}

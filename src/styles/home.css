@@ -17,10 +17,6 @@ body {
 	position: relative;
 }
 .home-bg-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-image: linear-gradient(to right, #0004, transparent 50%);
 	width: 100%;
 	height: 100%;
 
@@ -29,22 +25,24 @@ body {
 	align-items: center;
 }
 
+.idk-why-scroll-isnt-working-but-this-fixes-it {
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
 .homepage-container {
 	display: flex;
+	margin: 0 auto;
 	width: min(90vw, 1440px);
 	padding: min(2%, 1rem) 0;
-	height: 100%;
 	box-sizing: border-box;
-	overflow: auto;
-
-	gap: var(--homepage-gap);
 	justify-content: space-between;
 }
 
 .home-logo {
-	width: 8rem;
+	width: min(8rem, 32vw);
 	opacity: 0.9;
-	transition: 0.1s;
+	transition: opacity 0.1s;
 }
 .home-logo:hover {
 	opacity: 1;
@@ -58,7 +56,7 @@ body {
 	/* this just does normal text-shadow, i didnt
 	use a weird text-shadow so its horizontally centered w/ homepage-title-R */
 	font-weight: 700;
-	font-size: 4rem;
+	font-size: min(4rem, 12vw);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -69,7 +67,7 @@ body {
 .homepage-title-R {
 	/* random thing that makes the text shadow a gradient */
 	font-weight: 800;
-	font-size: 6rem;
+	font-size: min(6rem, 16vw);
 	width: fit-content;
 	background-clip: text;
 	-webkit-background-clip: text;

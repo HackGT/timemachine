@@ -57,28 +57,29 @@ const HomeLeft = () => {
 		padding="var(--main-margin-top) 0"
 		top='0' 
 		direction='column' 
+		alignItems={{base: 'center', xl: 'flex-start'}}
 		justifyContent={'center'} gap={8}>
 
 			<Image src={dropshadowLogo} className="home-logo" alt="logo" />
 			
 			<Box className="homepage-title">
-				<Box className="homepage-title-L">HackGT/</Box>
+				<Box className="homepage-title-L" textAlign={{base: 'center', xl: 'left'}}>HackGT/</Box>
 				<Box className="homepage-title-R">archive</Box>
 			</Box>
 
 			<Box>
-				<Text fontSize={18} fontWeight={600} className="shadowed-text">
+				<Text fontSize="min(18px, 5vw)" fontWeight={600} className="shadowed-text" textAlign={{base: 'center', xl: 'left'}}>
 					A collection of all past HackGT events, dating all the way back to our creation in 2014!
 				</Text>
 			</Box>
 
-			<hr style={{borderColor: '#fff8'}} />
+			<hr style={{borderColor: '#fff8', width: '100%'}} />
 
 			<Box>
-				<Text fontSize={14} color='#fffa' textAlign={'center'} mb={2}>
+				<Text fontSize={14} color='#fffc' textShadow="0.05em 0.05em 0 black" textAlign={'center'} mb={2}>
 					More from HexLabs!
 				</Text>
-				<Flex gap={4} justifyContent='center'>
+				<Flex gap={4} flexWrap='wrap' justifyContent='center'>
 					{LINKS.map((link, i) => <LinkIcon key={i} {...link} />)}
 				</Flex>
 			</Box>

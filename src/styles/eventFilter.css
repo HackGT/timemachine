@@ -3,6 +3,7 @@
 	text-shadow: -0.05em 0.05em #000;
 	transition: 0.1s;
 	cursor: pointer;
+	line-height: 1.2;
 }
 .event-filter-option:hover {
 	color: #ffe;

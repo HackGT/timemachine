@@ -1,8 +1,7 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import EventCard from "./EventCard";
 
 import prototypical2022_img from "../assets/prototypical2022_img.jpg";
-import hackgteeny2025_img from "../assets/hackgteeny2025_img.jpg";
 import hackgt11_img from "../assets/hackgt11_img.jpg";
 import hackgtX_img from "../assets/hackgtX_img.jpg";
 import hackgt9_img from "../assets/hackgt9_img.jpg";
@@ -114,64 +113,92 @@ const HomeRight = () => {
 	}, [currFilter]);
 
 	const updateFadeouts = useCallback(() => {
-		if (!scrollerRef.current) return;
+		if (!scrollerRef.current) {
+			return;
+		};
 		const el = scrollerRef.current;
 
 		const isScrollable = el.scrollHeight > el.clientHeight;
 		
 		if (!isScrollable) {
 			el.classList.remove('fade-bottom', 'fade-top');
+			setCanScrollDown(false);
+			setCanScrollUp(false);
 			return;
 		}
 
 		const isScrolledToBottom = el.scrollHeight < el.clientHeight + el.scrollTop + 1;
 		const isScrolledToTop = isScrolledToBottom ? false : el.scrollTop === 0;
+		
 		el.classList.toggle('fade-bottom', !isScrolledToBottom);
 		el.classList.toggle('fade-top', !isScrolledToTop);
+
 		setCanScrollDown(!isScrolledToBottom);
 		setCanScrollUp(!isScrolledToTop);
 	}, []);
 
 	useEffect(() => {
-		document.addEventListener('scroll', updateFadeouts);
-		return () => document.removeEventListener('scroll', updateFadeouts);
+		const currRef = scrollerRef.current;
+		if (!currRef) return; // how does this even happen
+
+		currRef.addEventListener('scroll', updateFadeouts);
+		window.addEventListener('resize', updateFadeouts);
+		return () => {
+			currRef.removeEventListener('scroll', updateFadeouts);
+			window.removeEventListener('resize', updateFadeouts);
+		}
 	}, [updateFadeouts]);
 
 	useEffect(updateFadeouts, [updateFadeouts, currFilter]);
 
+	const contentToShow = getFilteredEvents();
+
 	return (
 		<Flex 
-		direction="column" 
-		mt='var(--main-margin-top)' 
-		w="full" p={4} 
-		backdropFilter="blur(10px)" 
-		backgroundColor="#0002"
-		borderRadius="var(--rounded)"
-		border="1px solid #fff2">
-			
-			<EventFilter eventTypes={EVENT_TYPES} selected={currFilter} setSelected={setCurrFilter} />
-			
-			<Box w="full" h="full" overflow='hidden' position="relative">
-				<Flex 
-				ref={scrollerRef}
-				onScroll={updateFadeouts}
-				w='full'
-				h='full'
-				className="event-card-scroller">
-					{getFilteredEvents().map((event, i) => <EventCard key={i} {...event} />)}
-				</Flex>
+		w="full" 
+		h="full" 
+		alignItems="center"
+		overflow="hidden" 
+		pt={{base: 0, xl: 'var(--main-margin-top)' }}>
+			<Flex 
+			direction="column" 
+			p={4} 
+			h="full"
+			w="full"
+			maxH="fit-content"
+			backdropFilter="blur(10px)" 
+			backgroundColor="#0002"
+			borderRadius="var(--rounded)"
+			border="1px solid #fff2">
+				
+				<EventFilter
+				eventTypes={EVENT_TYPES} 
+				selected={currFilter} 
+				setSelected={(val: string) => {setCurrFilter(val)}} />
+				
+				<Box w="full" h="full" maxH="fit-content" overflow='hidden' position="relative">
+					
+					<Flex ref={scrollerRef} onScroll={updateFadeouts} className="event-card-scroller">
+						{contentToShow.length > 0? 
+							contentToShow.map((event, i) => <EventCard key={i} {...event} />)
+							:
+							<Text color="#fffa" textAlign='center' my='auto'>No events of this type yet!</Text>
+						}
+					</Flex>
 
-				<ChevronDown 
-					size={32}
-					style={{opacity: canScrollDown ? 1 : 0}}
+					<ChevronUp
+					onClick={() => {scrollerRef.current?.scrollBy({top: -200, behavior: 'smooth'})}}
+					style={{display: canScrollUp? 'block' : 'none'}}
+					className="scroll-up-icon" />
+
+					<ChevronDown 
+					onClick={() => {scrollerRef.current?.scrollBy({top: 200, behavior: 'smooth'})}}
+					style={{display: canScrollDown? 'block' : 'none'}}
 					className="scroll-down-icon" />
 
-				<ChevronUp
-					size={32}
-					style={{opacity: canScrollUp ? 1 : 0}}
-					className="scroll-up-icon" />
-			</Box>
+				</Box>
 
+			</Flex>
 		</Flex>
 	);
 };
