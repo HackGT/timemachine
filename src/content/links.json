@@ -1,28 +1,30 @@
 [
 	{
-		"title": "HackGT 11",
+		"title": "HACKGT 11",
 		"subtitle": "Circus of Invention",
 		"font": "Horse Saguaro",
 		"year": 2024,
 		"bgImg": "/src/assets/hackgt11_img.jpg",
 		"link": "https://2024.hack.gt/",
 		"eventType": "HackGT",
-		"dateBannerBg": "#11ae14",
-		"dateBannerColor": "white"
+		"bgPosition": "100% 100%",
+		"accentColorBg": "#11ae14",
+		"accentColorFg": "#fff82e"
 	},
 	{
-		"title": "HackGT X",
+		"title": "HACKGT X",
 		"subtitle": "A Journal of Memories",
 		"font": "DM Sans Variable",
 		"year": 2023,
 		"bgImg": "/src/assets/hackgtX_img.jpg",
 		"link": "https://2023.hack.gt/",
 		"eventType": "HackGT",
-		"dateBannerBg": "#524e4b",
-		"dateBannerColor": "white"
+		"bgPosition": "100% 50%",
+		"accentColorBg": "#524e4b",
+		"accentColorFg": "#f2f3f1"
 	},
 	{
-		"title": "HackGT 9",
+		"title": "HACKGT 9",
 		"subtitle": "Retro Reset",
 		"font": "DM Sans Variable",
 		"year": 2022,
@@ -30,11 +32,11 @@
 		"link": "https://2022.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"dateBannerBg": "#6517c4",
-		"dateBannerColor": "white"
+		"accentColorBg": "#3a0ab2",
+		"accentColorFg": "#caadff"
 	},
 	{
-		"title": "HackGT 8",
+		"title": "HACKGT 8",
 		"subtitle": "Discover Your Craft",
 		"font": "DM Sans Variable",
 		"year": 2021,
@@ -42,11 +44,11 @@
 		"link": "https://2021.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"dateBannerBg": "#fcce72",
-		"dateBannerColor": "#780909"
+		"accentColorBg": "#fcce72",
+		"accentColorFg": "#780909"
 	},
 	{
-		"title": "HackGT 7",
+		"title": "HACKGT 7",
 		"subtitle": "Reimagine Reality",
 		"font": "DM Sans Variable",
 		"year": 2020,
@@ -54,11 +56,12 @@
 		"link": "https://2020.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"dateBannerBg": "#045d81",
-		"dateBannerColor": "white"
+		"bgPosition": "80% 100%",
+		"accentColorBg": "#045d81",
+		"accentColorFg": "white"
 	},
 	{
-		"title": "HackGT 6",
+		"title": "HACKGT 6",
 		"subtitle": "Into the Rabbit Hole",
 		"font": "DM Sans Variable",
 		"year": 2019,
@@ -66,11 +69,11 @@
 		"link": "https://2019.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"dateBannerBg": "#87dfe1",
-		"dateBannerColor": "#073e50"
+		"accentColorBg": "#87dfe1",
+		"accentColorFg": "#073e50"
 	},
 	{
-		"title": "HackGT 5",
+		"title": "HACKGT 5",
 		"subtitle": "Dare to Venture",
 		"font": "DM Sans Variable",
 		"year": 2018,
@@ -78,11 +81,11 @@
 		"link": "https://2018.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"dateBannerBg": "#9c3c79",
-		"dateBannerColor": "#ffd68b"
+		"accentColorBg": "#9c3c79",
+		"accentColorFg": "#ffd68b"
 	},
 	{
-		"title": "HackGT 4",
+		"title": "HACKGT 4",
 		"subtitle": "New Heights",
 		"font": "DM Sans Variable",
 		"year": 2017,
@@ -91,23 +94,24 @@
 		"useWhiteText": true,
 		"eventType": "HackGT",
 		"bgPosition": "bottom",
-		"dateBannerBg": "#105f6f",
-		"dateBannerColor": "#a4f0ff"
+		"accentColorBg": "#105f6f",
+		"accentColorFg": "#a4f0ff"
 	},
 	{
-		"title": "HackGT 3",
+		"title": "HACKGT 3",
 		"subtitle": "",
 		"font": "DM Sans Variable",
 		"year": 2016,
 		"bgImg": "/src/assets/hackgt3_img.jpg",
 		"link": "https://2016.hack.gt/",
 		"useWhiteText": false,
+		"bgPosition": "100% 30%",
 		"eventType": "HackGT",
-		"dateBannerBg": "#d158b0",
-		"dateBannerColor": "#f2f0ff"
+		"accentColorBg": "#d158b0",
+		"accentColorFg": "#f2f0ff"
 	},
 	{
-		"title": "HackGT 2",
+		"title": "HACKGT 2",
 		"subtitle": "",
 		"font": "DM Sans Variable",
 		"year": 2015,
@@ -115,11 +119,11 @@
 		"link": "https://2015.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"dateBannerBg": "#ecb52b",
-		"dateBannerColor": "#3e0f0f"
+		"accentColorBg": "#ecb52b",
+		"accentColorFg": "#3e0f0f"
 	},
 	{
-		"title": "HackGT 1",
+		"title": "HACKGT 1",
 		"subtitle": "",
 		"font": "DM Sans Variable",
 		"year": 2014,
@@ -127,7 +131,7 @@
 		"link": "https://2014.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"dateBannerBg": "#454852",
-		"dateBannerColor": "#e4efef"
+		"accentColorBg": "#454852",
+		"accentColorFg": "#e4efef"
 	}
 ]

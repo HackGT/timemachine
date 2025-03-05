@@ -12,6 +12,6 @@ export type EventInfo = {
 	bgPosition?: string; // CSS background-position property. default='center'
 	useWhiteText?: boolean;
 
-	dateBannerBg: string;
-	dateBannerColor: string;
+	accentColorBg: string;
+	accentColorFg: string;
 }

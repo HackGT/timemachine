@@ -1,11 +1,3 @@
-@font-face {
-	font-family: 'Horse Saguaro';
-	src: url('../assets/fonts/hackgt11/HorseSaguaro.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
 body {
 	--main-margin-top: min(4rem, 6%);
 

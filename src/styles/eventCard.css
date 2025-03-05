@@ -28,43 +28,96 @@
 	display: flex;
 	position: relative;
 	overflow: hidden;
-	/* dynamically applied: box-shadow: 3px 3px 0 0 {banner color}; */
 	transition: 0.1s;
 	width: 100%;
-	border-top-width: 1px;
-	border-left-width: 1px;
-	border-style: solid;
-	border-top-right-radius: var(--rounded);
-	border-bottom-left-radius: var(--rounded);
-	mask-border: linear-gradient(45deg, transparent, white);
 	/* background-image applied dynamically */
 	background-size: cover;
 	background-repeat: no-repeat;
 	outline: var(--event-card-outline-width) solid transparent;
+
+	--clip-diag-slope: 15px;
+	--clip-end-offset: 40px;
 }
-.event-card:hover {
-	outline: var(--event-card-outline-width) solid white;
-}
+
 .event-card-content {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding: 1rem 0;
-	padding-top: 0.8rem;
+	padding: 1.4rem 0;
 	box-sizing: border-box;
+	width: 100%;
+	clip-path: polygon(
+		var(--clip-diag-slope) 0, 
+		calc(100% - var(--clip-end-offset)) 0, 
+		calc(100% - var(--clip-end-offset) - var(--clip-diag-slope)) 100%, 
+		0 100%
+	);
+	transition: 0.1s;
+	border: 2px solid transparent;
+}
+.event-card:hover .event-card-content {
+	clip-path: polygon(
+		0 0, 
+		100% 0, 
+		100% 100%, 
+		0 100%
+	);
+	border-radius: var(--rounded);
+	border: 2px solid white;
+}
+.event-card:hover .event-card-year-bold {
+	clip-path: polygon(
+		var(--clip-diag-slope) 0, 
+		calc(100%) 0, 
+		calc(100%) 100%, 
+		0 100%
+	);
+	padding-right: 1rem;
+}
+.event-card:hover .event-card-title, .event-card:hover .event-card-subtitle {
+	padding-left: 0.5rem;
 }
 
-.event-card-date-banner {
-	position: relative;
-	clip-path: polygon(calc(100% - 0.5rem) 0, calc(100% - 1rem) 50%, calc(100% - 0.5rem) 100%, 0% 100%, 0% 0%);
-	width: fit-content;
-	font-size: 0.9rem;
+.event-card-title {
+	font-family: Fugaz One, Inter, system-ui;
 	font-weight: 800;
-	padding: 0.1rem 1em;
-	margin-bottom: 0.2rem;
-	padding-right: 2rem;
-	box-sizing: border-box;
+	margin: 0 1rem;
+	padding-left: 1rem;
+	word-wrap: break-word;
+	font-size: 3rem;
+	line-height: 1.2;
+	transition: padding 0.1s;
 }
-
+.event-card-subtitle {
+	font-family: Roboto Mono Variable, Consolas, Figtree, Inter, system-ui;
+	font-style: italic;
+	font-weight: 700;
+	margin: 0 1rem;
+	padding-left: 1rem;
+	word-wrap: break-word;
+	font-size: 1rem;
+	line-height: 1.2;
+	transition: padding 0.1s;
+}
+.event-card-year-bold {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	font-size: 4rem;
+	font-family: Fugaz One;
+	font-weight: 700;
+	z-index: 10;
+	line-height: 1.2;
+	padding: 0 1.5rem;
+	clip-path: polygon(
+		var(--clip-diag-slope) 0, 
+		calc(100%) 0, 
+		calc(100% - var(--clip-diag-slope)) 100%, 
+		0 100%
+	);
+	transition: padding 0.1s;
+}
 
 /* STYLES RELATED TO THE FADE EFFECT WHEN SCROLLING */
 .scroll-down-icon, .scroll-up-icon {
