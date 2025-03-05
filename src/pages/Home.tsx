@@ -10,7 +10,7 @@ const Homepage = () => {
 		<Container className="home-bg">
 			<Box 
 			height="full"
-			backgroundImage={{base: 'linear-gradient(to bottom, #0009, transparent 50%)', xl: 'linear-gradient(to right, #0004, transparent 50%)'}}
+			backgroundImage={{base: 'linear-gradient(to bottom, #0009, transparent 50%)', xl: 'linear-gradient(to right, #0004, #0006 50%)'}}
 			className="home-bg-overlay">
 				<Box className="idk-why-scroll-isnt-working-but-this-fixes-it">
 					<Flex 

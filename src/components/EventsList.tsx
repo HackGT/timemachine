@@ -83,14 +83,12 @@ const EventsList = () => {
 		pt={{base: 0, xl: 'var(--main-margin-top)' }}>
 			<Flex 
 			direction="column" 
-			p={4} 
+			pl={1}
+			pr={3}
+			py={2}
 			h="full"
 			w="full"
-			maxH="fit-content"
-			backdropFilter="blur(10px)" 
-			backgroundColor="#0002"
-			borderRadius="var(--rounded)"
-			border="1px solid #fff2">
+			maxH="fit-content">
 				
 				{/*<EventFilter
 				eventTypes={EVENT_TYPES} 
