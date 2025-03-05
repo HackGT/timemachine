@@ -1,6 +1,6 @@
 import { Box, Container, Flex } from "@chakra-ui/react";
-import HomeLeft from "../components/HomeLeft";
-import HomeRight from "../components/HomeRight";
+import Title from "../components/Title";
+import EventsList from "../components/EventsList";
 
 import '../styles/home.css';
 
@@ -19,8 +19,8 @@ const Homepage = () => {
 					gap={{base: 0, xl: 'min(2rem, 10%)'}}
 					pb={{base: 'var(--main-margin-top)', xl: 'min(2%, 1rem)'}}
 					className="homepage-container">
-						<HomeLeft />	
-						<HomeRight />
+						<Title />	
+						<EventsList />
 					</Flex>
 				</Box>
 			</Box>

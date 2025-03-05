@@ -2,8 +2,13 @@ body {
 	background-color: black;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 .home-bg {
 	background-image: url("../assets/sunsetBg_temp.jpg");
+	background-color: #222;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;

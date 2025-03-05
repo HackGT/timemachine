@@ -9,7 +9,7 @@
 body {
 	--main-margin-top: min(4rem, 6%);
 
-	--rounded: 0.5rem;
+	--rounded: 0.3rem;
 
 	--event-card-outline-width: 3px;
 	--event-card-shadow: 0 0 3px #0006;

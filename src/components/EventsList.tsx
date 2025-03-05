@@ -1,116 +1,37 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import EventCard from "./EventCard";
 
-import prototypical2022_img from "../assets/prototypical2022_img.jpg";
-import hackgt11_img from "../assets/hackgt11_img.jpg";
-import hackgtX_img from "../assets/hackgtX_img.jpg";
-import hackgt9_img from "../assets/hackgt9_img.jpg";
-import hackgt8_img from "../assets/hackgt8_img.jpg";
-import hackgt7_img from "../assets/hackgt7_img.jpg";
-import EventFilter from "./EventFilter";
+// import EventFilter from "./EventFilter";
 
 import { EventInfo } from "../types";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-const EVENTS: EventInfo[] = [
-	/*
-	{
-		title: "HackGTeeny 2025",
-		font: 'DM Sans Variable',
-		date: "2025",
-		bgImg: hackgteeny2025_img,
-		link: "/hackgteeny-2025",
-		eventType: 'HackGTeeny',
-		dateBannerBg: '#5856d5',
-		dateBannerColor: '#dccdf3',
-	},
-	*/
-	{
-		title: "HackGT 11",
-		subtitle: "Circus of Invention",
-		font: 'Horse Saguaro',
-		date: "2024",
-		bgImg: hackgt11_img,
-		link: "/hackgt-11",
-		eventType: 'HackGT',
-		dateBannerBg: '#11ae14',
-		dateBannerColor: 'white',
-	},
-	{
-		title: "HackGT X",
-		subtitle: "A Journal of Memories",
-		font: 'DM Sans Variable',
-		date: "2023",
-		bgImg: hackgtX_img,
-		link: "/hackgt-x",
-		eventType: 'HackGT',
-		dateBannerBg: '#524e4b',
-		dateBannerColor: 'white',
-	},
-	{
-		title: "HackGT 9",
-		subtitle: "Retro Reset",
-		font: 'DM Sans Variable',
-		date: "2022",
-		bgImg: hackgt9_img,
-		link: "/hackgt-9",
-		useWhiteText: true,
-		eventType: 'HackGT',
-		dateBannerBg: '#6517c4',
-		dateBannerColor: 'white',
-	},
-	{
-		title: "Prototypical 2022",
-		subtitle: "THINK OUTSIDE THE BOX",
-		font: 'DM Sans Variable',
-		date: "2022",
-		bgImg: prototypical2022_img,
-		link: "/prototypical-2022",
-		eventType: 'Prototypical',
-		dateBannerBg: '#555',
-		dateBannerColor: 'white',
-		useWhiteText: true,
-	},
-	{
-		title: "HackGT 8",
-		subtitle: "Discover Your Craft",
-		font: 'DM Sans Variable',
-		date: "2021",
-		bgImg: hackgt8_img,
-		link: "/hackgt-8",
-		useWhiteText: true,
-		eventType: 'HackGT',
-		dateBannerBg: '#fcce72',
-		dateBannerColor: '#780909',
-	},
-	{
-		title: "HackGT 7",
-		subtitle: "Reimagine Reality",
-		font: 'DM Sans Variable',
-		date: "2020",
-		bgImg: hackgt7_img,
-		link: "/hackgt-7",
-		useWhiteText: true,
-		eventType: 'HackGT',
-		dateBannerBg: '#045d81',
-		dateBannerColor: 'white',
-	},
-]
-const EVENT_TYPES = ['All', 'HackGT', 'HackGTeeny', 'Prototypical', 'Catalyst'];
+// ========================================================
+//
+// ADDING NEW EVENTS:
+// use this json file to add past events !!!!
+//
+import _events from '../content/links.json';
+const EVENTS: EventInfo[] = _events.sort((a, b) => b.year - a.year); // sort by year, descending so recent is at top
+/* const EVENT_TYPES = (() => {
+	const event_types = new Set<string>(EVENTS.map((event) => event.eventType));
+	return ["All", ...event_types];
+})(); */
+// ========================================================
 
-const HomeRight = () => {
+const EventsList = () => {
 
 	const scrollerRef = useRef<HTMLDivElement>(null);
 
-	const [currFilter, setCurrFilter] = useState('All');
+	// const [currFilter, setCurrFilter] = useState('All');
 	const [canScrollDown, setCanScrollDown] = useState(false);
 	const [canScrollUp, setCanScrollUp] = useState(false);
 
-	const getFilteredEvents = useCallback(() => {
+	/* const getFilteredEvents = useCallback(() => {
 		if (currFilter === 'All') return EVENTS;
 		return EVENTS.filter((event) => event.eventType === currFilter);
-	}, [currFilter]);
+	}, [currFilter]); */
 
 	const updateFadeouts = useCallback(() => {
 		if (!scrollerRef.current) {
@@ -149,9 +70,9 @@ const HomeRight = () => {
 		}
 	}, [updateFadeouts]);
 
-	useEffect(updateFadeouts, [updateFadeouts, currFilter]);
+	// useEffect(updateFadeouts, [updateFadeouts, currFilter]);
 
-	const contentToShow = getFilteredEvents();
+	// const contentToShow = getFilteredEvents();
 
 	return (
 		<Flex 
@@ -171,19 +92,20 @@ const HomeRight = () => {
 			borderRadius="var(--rounded)"
 			border="1px solid #fff2">
 				
-				<EventFilter
+				{/*<EventFilter
 				eventTypes={EVENT_TYPES} 
 				selected={currFilter} 
-				setSelected={(val: string) => {setCurrFilter(val)}} />
+				setSelected={(val: string) => {setCurrFilter(val)}} />*/}
 				
 				<Box w="full" h="full" maxH="fit-content" overflow='hidden' position="relative">
 					
 					<Flex ref={scrollerRef} onScroll={updateFadeouts} className="event-card-scroller">
-						{contentToShow.length > 0? 
+						{/*contentToShow.length > 0? 
 							contentToShow.map((event, i) => <EventCard key={i} {...event} />)
 							:
 							<Text color="#fffa" textAlign='center' my='auto'>No events of this type yet!</Text>
-						}
+						*/}
+						{EVENTS.map((event, i) => <EventCard key={i} {...event} />)}
 					</Flex>
 
 					<ChevronUp
@@ -203,4 +125,4 @@ const HomeRight = () => {
 	);
 };
 
-export default HomeRight;
+export default EventsList;
