@@ -54,11 +54,11 @@ const Title = () => {
 		<Flex 
 		maxW={{base: '100%', xl: '40%'}} 
 		position={{base: 'relative', xl: 'sticky'}}
-		padding="var(--main-margin-top) 0"
+		pt={{base: '4rem', xl: '4rem'}}
 		top='0' 
 		direction='column' 
 		alignItems={{base: 'center', xl: 'flex-start'}}
-		justifyContent={'center'} gap={8}>
+		justifyContent={'center'} gap={8} mb={{base: 16, xl: 0}}>
 
 			<Link href="https://hexlabs.org">
 				<Image src={dropshadowLogo} className="home-logo" alt="logo" />
@@ -74,8 +74,6 @@ const Title = () => {
 					A collection of all past HackGT events, dating all the way back to our creation in 2014!
 				</Text>
 			</Box>
-
-			<hr style={{borderColor: '#fff8', width: '100%'}} />
 
 			<Box mx="auto">
 				<Text fontSize={14} color='#fffc' textShadow="0.05em 0.05em 0 black" textAlign={'center'} mb={2}>

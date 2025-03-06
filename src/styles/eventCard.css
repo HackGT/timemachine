@@ -10,8 +10,7 @@
 	flex-grow: 1;
 	overflow: auto;
 	height: 100%;
-	gap: 20px;
-	padding: 10px;
+	gap: min(4vw, 20px);
 }
 
 .event-card-wrapper {
@@ -32,7 +31,7 @@
 	width: 100%;
 	/* background-image applied dynamically */
 	--clip-diag-slope: 15px;
-	--clip-end-offset: 40px;
+	--clip-end-offset: min(5vw, 40px);
 }
 
 .event-card-content {
@@ -79,7 +78,7 @@
 	font-family: Fugaz One, Inter, system-ui;
 	font-weight: 800;
 	margin: 0 1rem;
-	padding-left: 1rem;
+	padding-left: min(3vw, 1rem);
 	word-wrap: break-word;
 	font-size: 3rem;
 	line-height: 1.2;
@@ -90,7 +89,7 @@
 	font-style: italic;
 	font-weight: 700;
 	margin: 0 1rem;
-	padding-left: 1rem;
+	padding-left: min(3vw, 1rem);
 	word-wrap: break-word;
 	font-size: 1rem;
 	line-height: 1.2;
@@ -101,11 +100,9 @@
 	top: 50%;
 	transform: translateY(-50%);
 	right: 0;
-	font-size: 4rem;
 	font-family: Fugaz One;
 	font-weight: 700;
 	z-index: 10;
-	line-height: 1.2;
 	padding: 0 1.5rem;
 	clip-path: polygon(
 		var(--clip-diag-slope) 0, 
