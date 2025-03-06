@@ -7,8 +7,8 @@
 		"bgImg": "/src/assets/hackgt11_img.jpg",
 		"link": "https://2024.hack.gt/",
 		"eventType": "HackGT",
-		"accentColorBg": "#11ae14",
-		"accentColorFg": "white"
+		"yearBgColor": "#11ae14",
+		"yearTextColor": "white"
 	},
 	{
 		"title": "HackGT X",
@@ -18,8 +18,8 @@
 		"bgImg": "/src/assets/hackgtX_img.jpg",
 		"link": "https://2023.hack.gt/",
 		"eventType": "HackGT",
-		"accentColorBg": "#524e4b",
-		"accentColorFg": "white"
+		"yearBgColor": "#524e4b",
+		"yearTextColor": "white"
 	},
 	{
 		"title": "HackGT 9",
@@ -30,8 +30,8 @@
 		"link": "https://2022.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"accentColorBg": "#6517c4",
-		"accentColorFg": "white"
+		"yearBgColor": "#6517c4",
+		"yearTextColor": "white"
 	},
 	{
 		"title": "Horizons 2022",
@@ -41,8 +41,8 @@
 		"link": "/horizons2022",
 		"useWhiteText": true,
 		"eventType": "Horizons",
-		"accentColorBg": "#48916E",
-		"accentColorFg": "white",
+		"yearBgColor": "#48916E",
+		"yearTextColor": "white",
 		"bgPosition": "bottom"
 	},
 	{
@@ -53,8 +53,8 @@
 		"bgImg": "/src/assets/prototypical2022_img.jpg",
 		"link": "/prototypical-2022",
 		"eventType": "Prototypical",
-		"accentColorBg": "#555",
-		"accentColorFg": "white",
+		"yearBgColor": "#555",
+		"yearTextColor": "white",
 		"useWhiteText": true
 	},
 	{
@@ -66,8 +66,8 @@
 		"link": "https://2021.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"accentColorBg": "#fcce72",
-		"accentColorFg": "#780909"
+		"yearBgColor": "#fcce72",
+		"yearTextColor": "#780909"
 	},
 	{
 		"title": "HackGT 7",
@@ -78,8 +78,8 @@
 		"link": "https://2020.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"accentColorBg": "#045d81",
-		"accentColorFg": "white"
+		"yearBgColor": "#045d81",
+		"yearTextColor": "white"
 	},
 	{
 		"title": "HackGT 6",
@@ -90,8 +90,8 @@
 		"link": "https://2019.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"accentColorBg": "#87dfe1",
-		"accentColorFg": "#073e50"
+		"yearBgColor": "#87dfe1",
+		"yearTextColor": "#073e50"
 	},
 	{
 		"title": "HackGT 5",
@@ -102,8 +102,8 @@
 		"link": "https://2018.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"accentColorBg": "#9c3c79",
-		"accentColorFg": "#ffd68b"
+		"yearBgColor": "#9c3c79",
+		"yearTextColor": "#ffd68b"
 	},
 	{
 		"title": "HackGT 4",
@@ -115,8 +115,8 @@
 		"useWhiteText": true,
 		"eventType": "HackGT",
 		"bgPosition": "bottom",
-		"accentColorBg": "#105f6f",
-		"accentColorFg": "#a4f0ff"
+		"yearBgColor": "#105f6f",
+		"yearTextColor": "#a4f0ff"
 	},
 	{
 		"title": "HackGT 3",
@@ -127,8 +127,8 @@
 		"link": "https://2016.hack.gt/",
 		"useWhiteText": false,
 		"eventType": "HackGT",
-		"accentColorBg": "#d158b0",
-		"accentColorFg": "#f2f0ff"
+		"yearBgColor": "#d158b0",
+		"yearTextColor": "#f2f0ff"
 	},
 	{
 		"title": "HackGT 2",
@@ -139,8 +139,8 @@
 		"link": "https://2015.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"accentColorBg": "#ecb52b",
-		"accentColorFg": "#3e0f0f"
+		"yearBgColor": "#ecb52b",
+		"yearTextColor": "#3e0f0f"
 	},
 	{
 		"title": "HackGT 1",
@@ -151,7 +151,7 @@
 		"link": "https://2014.hack.gt/",
 		"useWhiteText": true,
 		"eventType": "HackGT",
-		"accentColorBg": "#454852",
-		"accentColorFg": "#e4efef"
+		"yearBgColor": "#454852",
+		"yearTextColor": "#e4efef"
 	}
 ]

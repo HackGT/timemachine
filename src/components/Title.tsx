@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, Link } from "@chakra-ui/react";
 
 import dropshadowLogo from '../assets/shadowed_logo.png';
 import LinkIcon, { LinkIconProps } from "./LinkIcon";
@@ -60,8 +60,10 @@ const Title = () => {
 		alignItems={{base: 'center', xl: 'flex-start'}}
 		justifyContent={'center'} gap={8}>
 
-			<Image src={dropshadowLogo} className="home-logo" alt="logo" />
-			
+			<Link href="https://hexlabs.org">
+				<Image src={dropshadowLogo} className="home-logo" alt="logo" />
+			</Link>
+
 			<Box className="homepage-title">
 				<Box className="homepage-title-L" textAlign={{base: 'center', xl: 'left'}}>HackGT/</Box>
 				<Box className="homepage-title-R">archive</Box>
@@ -69,7 +71,7 @@ const Title = () => {
 
 			<Box>
 				<Text fontSize="min(18px, 5vw)" fontWeight={600} className="shadowed-text" textAlign={{base: 'center', xl: 'left'}}>
-					A collection of all past HackGT and other Hexlabs events, dating all the way back to our creation in 2014!
+					A collection of all past HackGT events, dating all the way back to our creation in 2014!
 				</Text>
 			</Box>
 

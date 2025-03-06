@@ -2,136 +2,171 @@
 	{
 		"title": "HACKGT 11",
 		"subtitle": "Circus of Invention",
-		"font": "Horse Saguaro",
 		"year": 2024,
 		"bgImg": "/src/assets/hackgt11_img.jpg",
 		"link": "https://2024.hack.gt/",
 		"eventType": "HackGT",
 		"bgPosition": "100% 100%",
-		"accentColorBg": "#11ae14",
-		"accentColorFg": "#fff82e"
+		"colors": {
+			"yearBgColor": "#2E9A69",
+			"yearShadowColor": "#2A2A4F",
+			"yearTextColor": "#F4FFD1",
+			"titleColor": "#364C65",
+			"titleShadowColor": "#A1E181"
+		}
 	},
 	{
 		"title": "HACKGT X",
 		"subtitle": "A Journal of Memories",
-		"font": "DM Sans Variable",
 		"year": 2023,
 		"bgImg": "/src/assets/hackgtX_img.jpg",
 		"link": "https://2023.hack.gt/",
 		"eventType": "HackGT",
 		"bgPosition": "100% 50%",
-		"accentColorBg": "#524e4b",
-		"accentColorFg": "#f2f3f1"
+		"colors": {
+			"yearBgColor": "#524e4b",
+			"yearShadowColor": "#333333",
+			"yearTextColor": "#f3f3f3",
+			"titleColor": "#444",
+			"titleShadowColor": "#a2c3c0"
+		}
 	},
 	{
 		"title": "HACKGT 9",
 		"subtitle": "Retro Reset",
-		"font": "DM Sans Variable",
 		"year": 2022,
 		"bgImg": "/src/assets/hackgt9_img.jpg",
 		"link": "https://2022.hack.gt/",
-		"useWhiteText": true,
 		"eventType": "HackGT",
-		"accentColorBg": "#3a0ab2",
-		"accentColorFg": "#caadff"
+		"colors": {
+			"yearBgColor": "#9900E5",
+			"yearTextColor": "#FFEFF4",
+			"yearShadowColor": "#510B58",
+			"titleColor": "#f5e7f9",
+			"titleShadowColor": "#9410A2"
+		}
 	},
 	{
 		"title": "HACKGT 8",
 		"subtitle": "Discover Your Craft",
-		"font": "DM Sans Variable",
 		"year": 2021,
 		"bgImg": "/src/assets/hackgt8_img.jpg",
 		"link": "https://2021.hack.gt/",
-		"useWhiteText": true,
 		"eventType": "HackGT",
-		"accentColorBg": "#fcce72",
-		"accentColorFg": "#780909"
+		"colors": {
+			"yearBgColor": "#fcce72",
+			"yearTextColor": "#780909",
+			"yearShadowColor": "transparent",
+			"titleColor": "#fcce72",
+			"titleShadowColor": "#780909"
+		}
 	},
 	{
 		"title": "HACKGT 7",
 		"subtitle": "Reimagine Reality",
-		"font": "DM Sans Variable",
 		"year": 2020,
 		"bgImg": "/src/assets/hackgt7_img.jpg",
 		"link": "https://2020.hack.gt/",
-		"useWhiteText": true,
 		"eventType": "HackGT",
 		"bgPosition": "80% 100%",
-		"accentColorBg": "#045d81",
-		"accentColorFg": "white"
+		"colors": {
+			"yearBgColor": "#045d81",
+			"yearTextColor": "#fdfdff",
+			"yearShadowColor": "#2E9AA9",
+			"titleColor": "#eaeff5",
+			"titleShadowColor": "#494e4e"
+		}
 	},
 	{
 		"title": "HACKGT 6",
 		"subtitle": "Into the Rabbit Hole",
-		"font": "DM Sans Variable",
 		"year": 2019,
 		"bgImg": "/src/assets/hackgt6_img.jpg",
 		"link": "https://2019.hack.gt/",
-		"useWhiteText": true,
 		"eventType": "HackGT",
-		"accentColorBg": "#87dfe1",
-		"accentColorFg": "#073e50"
+		"colors": {
+			"yearBgColor": "#A0D8E7",
+			"yearTextColor": "#394873",
+			"yearShadowColor": "#CAD9E8",
+			"titleColor": "#e3f2fc",
+			"titleShadowColor": "#193549"
+		}
 	},
 	{
 		"title": "HACKGT 5",
 		"subtitle": "Dare to Venture",
-		"font": "DM Sans Variable",
 		"year": 2018,
 		"bgImg": "/src/assets/hackgt5_img.jpg",
 		"link": "https://2018.hack.gt/",
-		"useWhiteText": true,
 		"eventType": "HackGT",
-		"accentColorBg": "#9c3c79",
-		"accentColorFg": "#ffd68b"
+		"colors": {
+			"yearBgColor": "#9c3c79",
+			"yearTextColor": "#ffd68b",
+			"yearShadowColor": "#AF1717",
+			"titleColor": "#FEFFC0",
+			"titleShadowColor": "#5A085E"
+		}
 	},
 	{
 		"title": "HACKGT 4",
 		"subtitle": "New Heights",
-		"font": "DM Sans Variable",
 		"year": 2017,
 		"bgImg": "/src/assets/hackgt4_img.jpg",
 		"link": "https://2017.hack.gt/",
-		"useWhiteText": true,
 		"eventType": "HackGT",
 		"bgPosition": "bottom",
-		"accentColorBg": "#105f6f",
-		"accentColorFg": "#a4f0ff"
+		"colors": {
+			"yearBgColor": "#105f6f",
+			"yearTextColor": "#a4f0ff",
+			"yearShadowColor": "#102B2F",
+			"titleColor": "#a4f0ff",
+			"titleShadowColor": "#102B2F"
+		}
 	},
 	{
 		"title": "HACKGT 3",
 		"subtitle": "",
-		"font": "DM Sans Variable",
 		"year": 2016,
 		"bgImg": "/src/assets/hackgt3_img.jpg",
 		"link": "https://2016.hack.gt/",
-		"useWhiteText": false,
 		"bgPosition": "100% 30%",
 		"eventType": "HackGT",
-		"accentColorBg": "#d158b0",
-		"accentColorFg": "#f2f0ff"
+		"colors": {
+			"yearBgColor": "#C447B8",
+			"yearTextColor": "#f2f0ff",
+			"yearShadowColor": "#690D5B",
+			"titleColor": "#8B0A64",
+			"titleShadowColor": "#f2f0ff"
+		}
 	},
 	{
 		"title": "HACKGT 2",
 		"subtitle": "",
-		"font": "DM Sans Variable",
 		"year": 2015,
 		"bgImg": "/src/assets/hackgt2_img.jpg",
 		"link": "https://2015.hack.gt/",
-		"useWhiteText": true,
 		"eventType": "HackGT",
-		"accentColorBg": "#ecb52b",
-		"accentColorFg": "#3e0f0f"
+		"colors": {
+			"yearBgColor": "#2A5BA0",
+			"yearTextColor": "#EBE9D2",
+			"yearShadowColor": "#7324E1",
+			"titleColor": "#FFAFAF",
+			"titleShadowColor": "#524e4b"
+		}
 	},
 	{
 		"title": "HACKGT 1",
 		"subtitle": "",
-		"font": "DM Sans Variable",
 		"year": 2014,
 		"bgImg": "/src/assets/hackgt1_img.jpg",
 		"link": "https://2014.hack.gt/",
-		"useWhiteText": true,
 		"eventType": "HackGT",
-		"accentColorBg": "#454852",
-		"accentColorFg": "#e4efef"
+		"colors": {
+			"yearBgColor": "#454852",
+			"yearTextColor": "#F9F4E1",
+			"yearShadowColor": "#591F1A",
+			"titleColor": "#FFE381",
+			"titleShadowColor": "#524e4b"
+		}
 	}
 ]

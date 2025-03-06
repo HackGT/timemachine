@@ -1,6 +1,5 @@
 export type EventInfo = {
 	title: string;
-	font?: string;
 	subtitle?: string;
 
 	link: string;
@@ -12,6 +11,11 @@ export type EventInfo = {
 	bgPosition?: string; // CSS background-position property. default='center'
 	useWhiteText?: boolean;
 
-	accentColorBg: string;
-	accentColorFg: string;
+	colors: {
+		yearBgColor: string;      // year background color
+		yearTextColor: string;    // year text color
+		yearShadowColor: string;  // used for year text shadow
+		titleColor: string;       // title text color
+		titleShadowColor: string; // title text shadow color
+	}
 }

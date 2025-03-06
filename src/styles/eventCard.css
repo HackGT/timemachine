@@ -31,15 +31,12 @@
 	transition: 0.1s;
 	width: 100%;
 	/* background-image applied dynamically */
-	background-size: cover;
-	background-repeat: no-repeat;
-	outline: var(--event-card-outline-width) solid transparent;
-
 	--clip-diag-slope: 15px;
 	--clip-end-offset: 40px;
 }
 
 .event-card-content {
+	--border-width: 2px;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -47,13 +44,13 @@
 	box-sizing: border-box;
 	width: 100%;
 	clip-path: polygon(
-		var(--clip-diag-slope) 0, 
-		calc(100% - var(--clip-end-offset)) 0, 
-		calc(100% - var(--clip-end-offset) - var(--clip-diag-slope)) 100%, 
-		0 100%
+		calc(var(--border-width) + var(--clip-diag-slope)) 0, 
+		calc(100% - var(--border-width) - var(--clip-end-offset)) 0, 
+		calc(100% - var(--border-width) - var(--clip-end-offset) - var(--clip-diag-slope)) 100%, 
+		var(--border-width) 100%
 	);
 	transition: 0.1s;
-	border: 2px solid transparent;
+	border: var(--border-width) solid transparent;
 }
 .event-card:hover .event-card-content {
 	clip-path: polygon(
