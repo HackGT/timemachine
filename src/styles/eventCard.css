@@ -63,12 +63,13 @@
 }
 .event-card:hover .event-card-year-bold {
 	clip-path: polygon(
-		var(--clip-diag-slope) 0, 
+		0% 0%, 
 		calc(100%) 0, 
 		calc(100%) 100%, 
-		0 100%
+		0% 100%
 	);
-	padding-right: 1rem;
+	border-top-left-radius: var(--rounded);
+	border-bottom-left-radius: var(--rounded);
 }
 .event-card:hover .event-card-title, .event-card:hover .event-card-subtitle {
 	padding-left: 0.5rem;
@@ -104,13 +105,14 @@
 	font-weight: 700;
 	z-index: 10;
 	padding: 0 1.5rem;
+	padding-top: 0.3rem; /* to truly center text. if using letters 'g', 'p', 'q' or anything that reaches down, remove this */
 	clip-path: polygon(
 		var(--clip-diag-slope) 0, 
 		calc(100%) 0, 
 		calc(100% - var(--clip-diag-slope)) 100%, 
 		0 100%
 	);
-	transition: padding 0.1s;
+	transition: 0.1s;
 }
 
 /* STYLES RELATED TO THE FADE EFFECT WHEN SCROLLING */

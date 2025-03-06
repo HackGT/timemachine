@@ -61,6 +61,8 @@ const EventsList = () => {
 		}
 	}, [updateFadeouts]);
 
+	useEffect(updateFadeouts, [updateFadeouts]);
+
 	return (
 		<Flex 
 		w="full" 

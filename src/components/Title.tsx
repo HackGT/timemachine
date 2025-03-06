@@ -69,17 +69,18 @@ const Title = () => {
 				<Box className="homepage-title-R">archive</Box>
 			</Box>
 
-			<Box>
+			<Box
+				h="fit">
 				<Text fontSize="min(18px, 5vw)" fontWeight={600} className="shadowed-text" textAlign={{base: 'center', xl: 'left'}}>
 					A collection of all past HackGT events, dating all the way back to our creation in 2014!
 				</Text>
 			</Box>
 
-			<Box mx="auto">
-				<Text fontSize={14} color='#fffc' textShadow="0.05em 0.05em 0 black" textAlign={'center'} mb={2}>
+			<Box>
+				<Text fontSize={14} color='#fffc' textShadow="0.05em 0.05em 0 black" textAlign='center' mb={2}>
 					More from HexLabs!
 				</Text>
-				<Flex gap={4} flexWrap='wrap' justifyContent='center'>
+				<Flex gap={4} flexWrap='wrap'>
 					{LINKS.map((link, i) => <LinkIcon key={i} {...link} />)}
 				</Flex>
 			</Box>

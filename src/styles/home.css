@@ -28,6 +28,7 @@ a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	backdrop-filter: blur(3px);
 }
 
 .idk-why-scroll-isnt-working-but-this-fixes-it {
@@ -79,7 +80,7 @@ a:hover {
 }
 
 .shadowed-text {
-	text-shadow: 0.1em 0.1em #000;
+	text-shadow: 0.06em 0.03em #000;
 }
 
 .link-icon {
