@@ -12,8 +12,8 @@
   "dependencies": {
     "@chakra-ui/react": "^3.7.0",
     "@emotion/react": "^11.14.0",
-    "@fontsource-variable/dm-sans": "^5.1.1",
-    "@fontsource-variable/roboto-mono": "^5.1.1",
+    "@fontsource-variable/dm-sans": "^5.2.5",
+    "@fontsource-variable/roboto-mono": "^5.2.5",
     "@fontsource/fugaz-one": "^5.2.5",
     "@fontsource/russo-one": "^5.2.5",
     "@hex-labs/core": "^1.0.52",
