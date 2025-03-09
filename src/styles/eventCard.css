@@ -70,6 +70,8 @@
 	);
 	border-top-left-radius: var(--rounded);
 	border-bottom-left-radius: var(--rounded);
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 .event-card:hover .event-card-title, .event-card:hover .event-card-subtitle {
 	padding-left: 0.5rem;
@@ -105,7 +107,7 @@
 	font-weight: 700;
 	z-index: 10;
 	padding: 0 1.5rem;
-	padding-top: 0.3rem; /* to truly center text. if using letters 'g', 'p', 'q' or anything that reaches down, remove this */
+	padding-top: 0.3rem; /* to truly center text. if using letters 'g', 'p', 'q' or anything that reaches down, remove this! */
 	clip-path: polygon(
 		var(--clip-diag-slope) 0, 
 		calc(100%) 0, 

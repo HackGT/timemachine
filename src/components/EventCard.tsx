@@ -17,7 +17,7 @@ const EventCard = (event: EventInfo) => {
 				className="event-card-year-bold">
 					<span style={{
 					color: event.colors.yearTextColor, 
-					textShadow: `2px 1px ${event.colors.yearShadowColor}`}}>
+					textShadow: `0.06em 0.03em ${event.colors.yearShadowColor}`}}>
 						{event.year}
 					</span>
 				</Box>
@@ -32,13 +32,13 @@ const EventCard = (event: EventInfo) => {
 					<Text 
 					fontSize={{base: 'min(8vw, 2.5rem)', xl: '3rem'}}
 					color={event.colors.titleColor} 
-					textShadow={`2px 1px ${event.colors.titleShadowColor}`} 
+					textShadow={`0.06em 0.03em ${event.colors.titleShadowColor}`} 
 					className='event-card-title'>{event.title}</Text>
 
 					<Text 
 					fontSize={{base: 'min(3vw, 1.2rem)', xl: '1rem'}}
 					color={event.colors.titleColor} 
-					textShadow={`1px 1px ${event.colors.titleShadowColor}`} 
+					textShadow={`0.08em 0.08em ${event.colors.titleShadowColor}`} 
 					className='event-card-subtitle'>{event.subtitle}</Text>
 				</Box>
 			

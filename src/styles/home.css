@@ -28,7 +28,7 @@ a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	backdrop-filter: blur(3px);
+	backdrop-filter: blur(0.2vw);
 }
 
 .idk-why-scroll-isnt-working-but-this-fixes-it {

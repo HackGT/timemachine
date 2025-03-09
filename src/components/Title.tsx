@@ -80,7 +80,7 @@ const Title = () => {
 				<Text fontSize={14} color='#fffc' textShadow="0.05em 0.05em 0 black" textAlign='center' mb={2}>
 					More from HexLabs!
 				</Text>
-				<Flex gap={4} flexWrap='wrap'>
+				<Flex gap={4} flexWrap='wrap' justifyContent={{base: 'center', xl: 'unset'}}>
 					{LINKS.map((link, i) => <LinkIcon key={i} {...link} />)}
 				</Flex>
 			</Box>
