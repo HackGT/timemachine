@@ -3,6 +3,8 @@ import { EventInfo } from "../types";
 import '../styles/eventCard.css';
 
 const EventCard = (event: EventInfo) => {	
+
+	console.log(`${event.bgImg}`)
 	
 	return (
 		<Link 
@@ -23,7 +25,7 @@ const EventCard = (event: EventInfo) => {
 				</Box>
 
 				<Box
-				bgImage={`url(${event.bgImg})`} 
+				bgImage={`url(${event.bgImg})`}
 				bgSize={'cover'}
 				bgRepeat={'no-repeat'}
 				bgPos={event.bgPosition || '100% 100%'}
