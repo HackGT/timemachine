@@ -108,12 +108,7 @@
 	z-index: 10;
 	padding: 0 1.5rem;
 	padding-top: 0.3rem; /* to truly center text. if using letters 'g', 'p', 'q' or anything that reaches down, remove this! */
-	clip-path: polygon(
-		var(--clip-diag-slope) 0, 
-		calc(100%) 0, 
-		calc(100% - var(--clip-diag-slope)) 100%, 
-		0 100%
-	);
+	/* clip-path applied dynamically */
 	transition: 0.1s;
 }
 

@@ -1,5 +1,21 @@
 [
 	{
+		"title": "HackGTeeny 2025",
+		"subtitle": "",
+		"year": 2025,
+		"bgImg": "/hackgteeny2025_img.jpg",
+		"link": "https://teeny.hack.gt/",
+		"eventType": "HackGTeeny",
+		"bgPosition": "100% 25%",
+		"colors": {
+			"yearBgColor": "#EFEFFF",
+			"yearShadowColor": "transparent",
+			"yearTextColor": "#7B69EC",
+			"titleColor": "#EFEFFF",
+			"titleShadowColor": "#04041A"
+		}
+	},
+	{
 		"title": "HACKGT 11",
 		"subtitle": "Circus of Invention",
 		"year": 2024,
@@ -12,6 +28,21 @@
 			"yearTextColor": "#F4FFD1",
 			"titleColor": "#364C65",
 			"titleShadowColor": "#A1E181"
+		}
+	},
+	{
+		"title": "Horizons 2024",
+		"subtitle": "",
+		"year": 2024,
+		"bgImg": "/horizons2024_bg.jpg",
+		"link": "https://horizons.hexlabs.org",
+		"eventType": "Horizons",
+		"colors": {
+			"yearBgColor": "#F6E2C8",
+			"yearShadowColor": "transparent",
+			"yearTextColor": "#4A4080",
+			"titleColor": "#F3DDC0",
+			"titleShadowColor": "#481C47"
 		}
 	},
 	{
@@ -30,6 +61,21 @@
 		}
 	},
 	{
+		"title": "Catalyst 2023",
+		"subtitle": "",
+		"year": 2023,
+		"bgImg": "/catalyst2023_bg.jpg",
+		"link": "https://2022.catalyst.hexlabs.org",
+		"eventType": "Catalyst",
+		"colors": {
+			"yearBgColor": "#d8a137",
+			"yearShadowColor": "#333333",
+			"yearTextColor": "#ebebeb",
+			"titleColor": "#f4de90",
+			"titleShadowColor": "ffbc39"
+		}
+	},
+	{
 		"title": "HACKGT 9",
 		"subtitle": "Retro Reset",
 		"year": 2022,
@@ -42,6 +88,22 @@
 			"yearShadowColor": "#510B58",
 			"titleColor": "#f5e7f9",
 			"titleShadowColor": "#9410A2"
+		}
+	},
+	{
+		"title": "Prototypical 2022",
+		"subtitle": "",
+		"year": 2022,
+		"bgImg": "/prototypical2022_img.jpg",
+		"link": "https://prototypical.hexlabs.org",
+		"eventType": "Prototypical",
+		"bgPosition": "50% 100%",
+		"colors": {
+			"yearBgColor": "#FFFFFF",
+			"yearTextColor": "#000000",
+			"yearShadowColor": "#FFFFFF",
+			"titleColor": "#FFFFFF",
+			"titleShadowColor": "#000000"
 		}
 	},
 	{
